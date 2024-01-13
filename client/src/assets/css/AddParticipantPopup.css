@@ -1,0 +1,148 @@
+
+
+.mainpage-addparticipant-form {
+  width: 20%;
+  height: 65%;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 6;
+  animation-name: popupaddfriend-open;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+  align-items: center;
+}
+
+.mainpage-addparticipant-form > div:first-child {
+  height: 50px;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.6px solid #6A6A6A;
+}
+
+.mainpage-addparticipant-form > div:first-child h2 {
+  font-family: 'Quicksand';
+  font-size: 15px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.mainpage-addparticipant-form > div:first-child svg {
+  padding-right: 10px;
+}
+
+.mainpage-addparticipant-form > input {
+  margin-top: 15px;
+  border: none;
+  width: 90%;
+  height: 25px;
+  min-height: 25px;
+  border-bottom: 0.6px solid #6A6A6A;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.mainpage-addparticipant-form > input:focus {
+  outline: none;
+  border-color: blueviolet;
+}
+
+.mainpage-addparticipant-form > div:nth-child(3) {
+  max-height: 100%;
+  height: 100%;
+  overflow: auto;
+  width: 90%;
+  border-bottom: 0.6px solid #6A6A6A;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainpage-addparticipant-form > div:nth-child(3)::-webkit-scrollbar {
+  display: none;
+}
+
+.mainpage-addparticipant-form > div:nth-child(3) ul {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.addparticipant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.addparticipant-item div {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.addparticipant-item img {
+  width: 49px;
+  height: 49px;
+  border-radius: 30px;
+}
+ 
+.addparticipant-item h3 {
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.addparticipant-item input {
+  width: 20px;
+  height: 20px;
+}
+
+.mainpage-addparticipant-form > div:nth-child(4) {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 10px;
+  padding: 10px 0;
+}
+
+.mainpage-addparticipant-form > div:nth-child(4) button {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+
+.mainpage-addparticipant-form > div:nth-child(4) > button:nth-child(1) {
+  width: 70px;
+  font-weight: 700;
+}
+.mainpage-addparticipant-form > div:nth-child(4) > button:nth-child(2) {
+  width: 100px;
+  color: white;
+  background-color: #332cf2;
+  font-weight: 700;
+}
+
+.mainpage-addparticipant-form > div:nth-child(4) > button:nth-child(1):hover {
+  background-color: #6A6A6A;
+  color: white;
+}
+
+.mainpage-addparticipant-form > div:nth-child(4) > button:nth-child(2):hover {
+  opacity: 0.8;
+}
+
+

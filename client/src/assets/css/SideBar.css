@@ -1,0 +1,119 @@
+.mainpage-sidebar-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--small-background-color);
+  display: grid;
+  grid-template-rows: 1.1fr 8.8fr 0.1fr;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) {
+  display: grid;
+  grid-template-rows: 3.5fr 3fr 3.5fr;
+  justify-content: center;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) >  nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 50px;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav input {
+  display: none;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav label {
+  flex: 1;
+  width: 100%;
+  height: 25%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav svg {
+  display: flex;
+  align-items: center;
+  transition: color 0.6s ease;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-chat:checked ~ label.mainpage-sidebar-chat svg,
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-media:checked ~ label.mainpage-sidebar-media svg,
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-group:checked ~ label.mainpage-sidebar-group svg,
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-addfriend:checked ~ label.mainpage-sidebar-addfriend svg {
+  color: #fff;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav .mainpage-sidebar-tab {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  margin-top: 4px;
+  z-index: 0;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #05abe0 0%,#001e54 100%);
+  transition: 0.6s ease-in-out;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-chat:checked ~ .mainpage-sidebar-tab {
+  top: 0%;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-media:checked ~ .mainpage-sidebar-tab {
+  top: 25%;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-group:checked ~ .mainpage-sidebar-tab {
+  top: 50%;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) > nav #mainpage-sidebar-addfriend:checked ~ .mainpage-sidebar-tab {
+  top: 75%;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) >  div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.mainpage-sidebar-container > div:nth-child(2) >  div:nth-child(3) div {
+  height: 25%;
+} 
+
+.mainpage-sidebar-container svg {
+  width: 25px;
+  height: 25px;
+}
+
+.mainpage-sidebar-container img {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.mainpage-sidebar-bottom #notification {
+  position: relative;
+}
+
+.mainpage-sidebar-bottom #notification div {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: -6px;
+  right: -3px;
+}

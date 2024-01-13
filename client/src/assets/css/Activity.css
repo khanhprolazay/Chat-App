@@ -1,0 +1,204 @@
+.mainpage-activity-container {
+  background-color: var(--small-background-color);
+  display: grid;
+	grid-template-rows: 0.9fr 8.1fr;
+	max-height: inherit;
+  max-width: 100%;
+}
+
+.mainpage-activity-container > div > div {
+  padding: 17px 0 0 16px;
+}
+
+.mainpage-activity-container > div:first-child {
+  padding-left: 16px;
+  padding-right: 5px;
+  margin-top: 20px;
+}
+
+.mainpage-activity-container > div:first-child h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.022em;
+  color: var(--heavy-text-color);
+}
+
+.mainpage-activity-container > div:nth-child(2) {
+  display: grid;
+  grid-template-rows: 140px auto 185px;
+  gap: 10px 0;
+  background-color: white;
+  max-width: 100%;
+}
+
+.mainpage-activity-container > div:nth-child(2) > div {
+  background-color: var(--small-background-color);
+  min-width: 248.4px;
+
+}
+
+.mainpage-activity-container > div:nth-child(2) h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.022em;
+  color: var(--heavy-text-color)
+}
+
+
+/* Stories  */
+.mainpage-activity-stories {
+  max-width: 100%;
+  overflow: auto;
+}
+
+.mainpage-activity-stories > div:nth-child(2) {
+  margin-top: 11px;
+  display: flex;
+  width: 100%;
+  max-width: fit-content;
+  overflow: auto;
+  gap: 0 10px;
+}
+
+.mainpage-activity-stories > div:nth-child(2)::-webkit-scrollbar {
+  display: none;
+}
+
+.mainpage-activity-stories > div:nth-child(2) > div {
+  width: 45px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+}
+
+.mainpage-activity-stories > div:nth-child(2) > div h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.022em;
+  color: var(--heavy-text-color);
+}
+
+.mainpage-activity-profile > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-right: 5px;
+  border-bottom: 0.6px solid #6A6A6A;
+}
+
+.mainpage-activity-profile > div:nth-child(2) > div {
+  position: relative;
+  margin-top: 23px;
+}
+
+.mainpage-activity-profile > div:nth-child(2) h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.022em;
+  color: var(--heavy-text-color)
+}
+
+.mainpage-activity-profile > div:nth-child(2) p {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.022em;
+  color: var(--heavy-text-color);
+}
+
+.mainpage-activity-profile > div:nth-child(2) > div > img {
+  width: 49.18px;
+  height: 49.18px;
+  border-radius: 16px;
+}
+
+.mainpage-activity-profile > div:nth-child(2) > div > div {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background-color: #53E04E;
+  bottom: -4px;
+  right: -4px;
+  border: 2px solid black;
+}
+
+.mainpage-activity-profile > div:nth-child(3) {
+  margin-right: 5px;
+}
+
+.mainpage-activity-profile > div:nth-child(3) > div:first-child {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  height: 38px;
+}
+
+.mainpage-activity-profile > div:nth-child(3) > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+  gap: 4px;
+}
+.mainpage-activity-profile > div:nth-child(3) > div:nth-child(2) img {
+  width: 57.5px;
+  height: 63px;
+  border: 1.5px solid #1E1E1E;
+  border-radius: 4px;
+}
+
+
+.mainpage-activity-files > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  margin-right: 5px;
+}
+
+.mainpage-activity-files > div > div {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.mainpage-activity-files > div > div > div {
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainpage-activity-files > div > div > h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.022em;
+  color: var(--heavy-text-color);
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}

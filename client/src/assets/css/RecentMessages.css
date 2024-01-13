@@ -1,0 +1,211 @@
+.mainpage-recentmessages-container {
+	background-color: var(--small-background-color);
+	display: grid;
+	grid-template-rows: 1.1fr 8.9fr;
+	max-height: inherit;
+}
+
+.mainpage-recentmessages-container > div:nth-child(1) {
+	padding: 0 16px;
+	margin-top: 20px;
+	display: flex;
+	gap: 0 16px;
+}
+
+.mainpage-recentmessages-container > div:nth-child(1) h2 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.022em;
+	color: var(--heavy-text-color);
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) {
+	display: grid;
+	grid-template-rows: 0.3fr 9.7fr;
+	gap: 20px 0;
+	max-height: 100%;
+	min-height: 100%;
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) > nav {
+	margin: 0px 16px;
+	padding: 6px 8px;
+	background-color: white;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	position: relative;
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) > nav input {
+	display: none;
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) > nav label {
+	flex: 1;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 0.022em;
+	color: var(--heavy-text-color);
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) > nav .mainpage-recentactivity-tab {
+	position: absolute;
+	left: 0;
+	width: 50%;
+	height: 85%;
+	background-color: var(--medium-background-color);
+	border-radius: 8px;
+	z-index: 0;
+	transition: 0.6s ease-in-out;
+	margin-left: 3px;
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) > nav #mainpage-recentactivity-personal:checked ~ .mainpage-recentactivity-tab {
+	left: 0%;
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) > nav #mainpage-recentactivity-group:checked ~ .mainpage-recentactivity-tab {
+	left: 47.8%;
+}
+
+.mainpage-recentmessages-container > div:nth-child(2) > div:nth-child(2) {
+	background-color: var(--small-background-color);
+	overflow-y: auto;
+	min-height: 100%;
+	max-height: fit-content;
+}
+
+.mainpage-recentmessages-container
+	> div:nth-child(2)
+	> div:nth-child(2)::-webkit-scrollbar {
+	display: none;
+}
+
+.mainpage-recentmessages-item-container {
+	padding: 20px 16px;
+	display: grid;
+	grid-template-columns: 52px auto;
+	gap: 0 11px;
+	cursor: pointer;
+	transition: all ease 0.6s;
+	position: relative;
+}
+
+.mainpage-recentmessages-item-container > * {
+	width: 100%;
+}
+
+.mainpage-recentmessages-item-container:hover {
+	background-color: white;
+}
+
+.mainpage-recentmessages-item-container > div > img {
+	width: 49.18px;
+	height: 49.18px;
+	border-radius: 16px;
+}
+
+.mainpage-recentmessages-item-container > div:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	gap: 6px 0;
+	width: 500px;
+	max-width: 35%;
+}
+
+.mainpage-recentmessages-item-container > div:nth-child(2) > div:first-child {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+
+.mainpage-recentmessages-item-container > div:nth-child(2) > div:nth-child(2) {
+	display: flex;
+	gap: 0 5px;
+}
+
+.mainpage-recentmessages-item-container
+	> div:nth-child(2)
+	> div:first-child
+	> h4 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 0.022em;
+	color: var(--medium-text-color);
+}
+
+.mainpage-recentmessages-item-container
+	> div:nth-child(2)
+	> div:first-child
+	> p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 200;
+	font-size: 8px;
+	line-height: 10px;
+	letter-spacing: 0.022em;
+	color: var(--medium-text-color);
+	text-align: center;
+}
+
+.mainpage-recentmessages-item-container > div:nth-child(2) p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.022em;
+	color: var(--medium-text-color);
+
+	display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+	word-wrap: break-word;
+}
+
+.mainpage-recentmessages-item-container > div:nth-child(3) {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 60%;
+	background-color: red;
+	right: 15px;
+	top: 15px;
+}
+
+.mainpage-recentmessages-item-container > div:first-child {
+	position: relative;
+}
+
+.mainpage-recentmessages-item-container > div:first-child > div:nth-child(2) {
+	position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #53E04E;
+    right: 0px;
+		bottom: 5px;;
+    border: 2px solid black;
+}

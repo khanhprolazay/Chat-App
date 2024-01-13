@@ -1,0 +1,33 @@
+version: '3'
+
+networks:
+  chat:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
+
+services:
+  cassandra:
+    user: root
+    container_name: cassandra
+    image: 'bitnami/cassandra:4.0.8'
+    networks:
+      chat:
+        ipv4_address: 172.28.0.2
+    ports:
+      - "9042:9042"
+      - "7000:7000"
+      - "7001:7001"
+      - "7199:7199"
+    volumes:
+      - /home/azureuser/database/cassandra:/bitnami
+    environment:
+      - CASSANDRA_CLUSTER_NAME=cassandra-cluster
+      - CASSANDRA_SEEDS=10.0.0.5, 10.0.0.6, 10.0.0.7
+      - CASSANDRA_BROADCAST_ADDRESS=10.0.0.7
+      - CASSANDRA_NUM_TOKENS=20
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+
+
+  

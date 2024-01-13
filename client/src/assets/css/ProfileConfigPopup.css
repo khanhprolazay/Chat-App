@@ -1,0 +1,146 @@
+.profileconfig-form {
+	width: 25%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.profileconfig-form > div:first-child {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 95%;
+	padding: 10px 0;
+}
+
+.profileconfig-form > div:first-child h3 {
+	font-family: "Quicksand";
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.profileconfig-form > div:first-child svg {
+	width: 20px;
+	height: 20px;
+}
+
+.profileconfig-form > div:first-child svg:hover {
+	background-color: var(--medium-background-color);
+	border-radius: 8px;
+}
+
+.profileconfig-form > div:nth-child(2) {
+	width: 95%;
+	border-bottom: 0.6px solid #6a6a6a;
+}
+
+.profileconfig-form > div:nth-child(2) h4 {
+	font-family: "Quicksand";
+	font-weight: 700;
+}
+
+.profileconfig-form > div:nth-child(2) > div:nth-child(2) {
+	width: 100%;
+	height: auto;
+	display: flex;
+	padding: 8px 0;
+	gap: 0 20px;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.profileconfig-form > div:nth-child(2) > div:nth-child(2) img {
+	width: 49px;
+	height: 49px;
+	border-radius: 100%;
+	border: 0.6px solid;
+	cursor: pointer;
+}
+
+.profileconfig-form > div:nth-child(2) > div:nth-child(2) input {
+	border: none;
+	transition: all 0.4s ease;
+	width: 100%;
+	font-weight: 700;
+	height: 30px;
+	font-family: "Poppins";
+	font-size: 12px;
+}
+
+.profileconfig-form > div:nth-child(2) > div:nth-child(2) input:focus {
+	border-bottom: 0.6px solid blueviolet;
+	outline: none;
+}
+
+.profileconfig-form > div:nth-child(3) {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	gap: 20px 0;
+	padding: 20px 0;
+	border-bottom: 0.6px solid #6a6a6a;
+}
+
+.profileconfig-form > div:nth-child(3) > div {
+	width: 100%;
+	display: flex;
+	gap: 0 20px;
+	align-items: center;
+}
+
+.profileconfig-form > div:nth-child(3) > div > h4 {
+	font-family: "Quicksand";
+	font-weight: 500;
+	color: var(--heavy-text-color);
+	font-size: 15px;
+	width: 70%;
+}
+
+.profileconfig-form > div:nth-child(3) > div > input {
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.profileconfig-form > div:nth-child(4) {
+	display: flex;
+	width: 95%;
+	justify-content: end;
+	justify-content: flex-end;
+	gap: 0 10px;
+	padding: 20px 0;
+}
+
+.profileconfig-form > div:nth-child(4) button {
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2 ease;
+}
+
+.profileconfig-form > div:nth-child(4) > button:first-child {
+	width: 70px;
+	font-weight: 700;
+}
+
+.profileconfig-form > div:nth-child(4) > button:first-child:hover {
+	background-color: #6a6a6a;
+	color: white;
+}
+
+.profileconfig-form > div:nth-child(4) > button:nth-child(2) {
+	width: 100px;
+	color: white;
+	background-color: #332cf2;
+	font-weight: 700;
+}
+
+.profileconfig-form > div:nth-child(4) > button:nth-child(2):hover {
+	opacity: 0.8;
+}

@@ -1,0 +1,222 @@
+@keyframes popup-changeBG {
+	0% {
+		background: none;
+	}
+	100% {
+		background: rgba(135, 132, 132, 0.8);
+	}
+}
+
+@keyframes popupaddfriend-open {
+	0% {
+		width: 0;
+		height: 0;
+	}
+	100% {
+		width: 20%;
+		height: 65%;
+	}
+}
+
+.popup-container {
+	background: rgba(135, 132, 132, 0.8);
+	width: 100vw;
+	height: 100vh;
+	transition: all 0.6 ease;
+	position: absolute;
+	z-index: 5;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	animation: creategrouppopup-appear 0.2;
+}
+
+.mainpage-addfriendpopup-form {
+	width: 20%;
+	height: 65%;
+	background-color: white;
+	border-radius: 10px;
+	z-index: 6;
+	animation-name: creategrouppopup-appear;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	transition: all 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mainpage-addfriendpopup-form > div:first-child {
+	height: 50px;
+	min-height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 0.6px solid #6a6a6a;
+}
+
+.mainpage-addfriendpopup-form > div:first-child h2 {
+	font-family: 'Quicksand';
+	font-size: 15px;
+	font-weight: 700;
+	padding-left: 10px;
+}
+
+.mainpage-addfriendpopup-form > div:first-child svg {
+	padding-right: 10px;
+}
+
+.mainpage-addfriendpopup-form input {
+	margin-top: 15px;
+	border: none;
+	width: 90%;
+	height: 25px;
+	min-height: 25px;
+	border-bottom: 0.6px solid #6a6a6a;
+	display: flex;
+	align-items: center;
+	transition: all 0.4s ease;
+}
+
+.mainpage-addfriendpopup-form input:focus {
+	outline: none;
+	border-color: blueviolet;
+}
+
+.mainpage-addfriendpopup-form:first-child > div:nth-child(3) {
+	max-height: 100%;
+	height: 100%;
+	overflow-y: auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+.mainpage-addfriendpopup-form:first-child
+	> div:nth-child(3)::-webkit-scrollbar {
+	display: none;
+}
+
+.mainpage-addfriendpopup-form:first-child > div:nth-child(3) ul {
+	width: 100%;
+	height: 100%;
+	max-height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px 0;
+}
+
+.addfriendpopup-item {
+	width: 90%;
+	height: auto;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.addfriendpopup-item img {
+	width: 49px;
+	height: 49px;
+	border-radius: 30px;
+}
+
+.addfriendpopup-item > div:first-child {
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+
+.addfriendpopup-item > div:first-child > div:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90%;
+}
+
+.addfriendpopup-item button {
+	cursor: pointer;
+	padding: 5px 10px;
+	background-color: white;
+	border: 1px solid #4267b2;
+	border-radius: 5px;
+	color: #4267b2;
+	font-style: italic;
+}
+
+.addfriendpopup-item button:hover {
+	background-color: #4267b2;
+	color: white;
+}
+
+.addfriendpopup-item > div:first-child > div:nth-child(2) h4 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	letter-spacing: 0.022em;
+	color: var(--heavy-text-color);
+}
+
+.addfriendpopup-item > div:first-child > div:nth-child(2) p {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: 0.022em;
+	color: var(--heavy-text-color);
+}
+
+.mainpage-addfriendpopup-form:first-child > div:nth-child(4) {
+	width: 100%;
+	height: 65px;
+	min-height: 65px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0 10px;
+	padding-right: 20px;
+}
+
+.mainpage-addfriendpopup-form:first-child > div:nth-child(4) button {
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2 ease;
+}
+
+.mainpage-addfriendpopup-form:first-child
+	> div:nth-child(4)
+	button:nth-child(1) {
+	width: 70px;
+	font-weight: 700;
+}
+
+.mainpage-addfriendpopup-form:first-child
+	> div:nth-child(4)
+	button:nth-child(2) {
+	width: 100px;
+	color: white;
+	background-color: #332cf2;
+	font-weight: 700;
+}
+
+.mainpage-addfriendpopup-form:first-child
+	> div:nth-child(4)
+	button:nth-child(1):hover {
+	background-color: #6a6a6a;
+	color: white;
+}
+
+.mainpage-addfriendpopup-form:first-child
+	> div:nth-child(4)
+	button:nth-child(2):hover {
+	opacity: 0.7;
+}
